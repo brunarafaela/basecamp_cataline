@@ -1,0 +1,26 @@
+{
+    "name": "aula",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "babel ./src/main.js -o ./public/bundle.js -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/brunarafaela/basecamp_cataline.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/brunarafaela/basecamp_cataline/issues"
+    },
+    "homepage": "https://github.com/brunarafaela/basecamp_cataline#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.13.14",
+        "@babel/core": "^7.13.15",
+        "@babel/preset-env": "^7.13.15"
+    }
+}
