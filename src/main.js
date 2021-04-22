@@ -1,82 +1,48 @@
-// const myPromise = () => new Promise((resolve, reject) => {
-//         return setTimeout(() => {
-//             resolve('ok')
-//         }, 2000);
-//     }).catch((error) => {
-//         console.log(error)
-//     }) //Try/catch
+import { createApp } from 'vue'
+import Todos from './api/todos'
+import './assets/css/main.css'
+import axios from './utils/axios'
 
-// const myPromise = () => new Promise((resolve, reject) => {
-//     return setTimeout(() => {
-//         resolve('certo')
-//     }, 2000)
-// })
+const apiTodos = new Todos()
 
-// myPromise().then(() => {
-//     console.log('primeira vez')
-// }).catch((error) => {
-//     console.warn(error)
-// })
+const app = createApp({
+    data() {
+        return {
+            todos: [],
+            form: {
+                text: "",
+                done: false,
+            },
+        };
+    },
+    created() {
+        this.fetchTodos();
+    },
+    methods: {
+        async fetchTodos() {
+            this.todos = await apiTodos.index();
+        },
+        async createTodo() {
+            const data = await apiTodos.store(this.form);
+            this.todos.push(data);
 
+            (this.form.text = ""), (this.form.done = false);
+        },
+        async toggleTodoStatus(todo) {
+            const data = await apiTodos.update({
+                ...todo,
+                done: !todo.done,
+            });
+            const index = this.todos.findIndex(({ id }) => id === data.id);
+            this.todos[index] = data;
+        },
+        async destroyTodo(id) {
+            await apiTodos.destroy({ id });
 
-// const exec = async() => {
-//     try {
-//         await myPromise()
-//         console.log('primeira vez')
+            const index = this.todos.findIndex((todo) => todo.id === id);
+            this.todos.splice(index, 1);
+        },
+    },
+});
 
-//         await myPromise();
-//         console.log("segunda vez")
-
-//     } catch (error) {
-//         console.warn(error)
-//     } finally {
-//         console.log('finalizou')
-//     }
-// }
-
-// exec()
-
-// async function exec() {
-//     const response = await myPromise()
-//     console.log(response)
-// }
-
-// const exec = async() => {
-//     const response = await myPromise()
-//     console.log(response)
-// }
-
-// const exec = async() => {
-//     await myPromise()
-//     console.log('1 vez')
-
-//     await myPromise()
-//     console.log("2 vez")
-
-//     await myPromise()
-//     console.log("3 vez")
-// }
-
-// exec()
-
-
-//e2017 /es8 /asunc/await
-
-// myPromisse().then((response) => {
-//     console.log(response)
-// })
-
-
-
-//Import/export
-
-// import * as calculator from './calculator.js'
-// console.log(calculator.sum(5, 5))
-// console.log(calculator.sub(10, 3))
-
-// import passarinho from './sum.js'
-// console.log(passarinho(5, 5))
-
-// import sum, { sub } from './sum'
-// console.log(sum(5, 5))
-// console.log(sub(10, 7))
+app.mount('#app')
