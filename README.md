@@ -31,7 +31,7 @@ O base teve o seguinte conteúdo:
 
 Este projeto é divido em três partes:
 1. Backend (pasta fake-api) 
-2. Frontend
+2. Frontend (pasta web)
 
 💡O Frontend precisa que o Backend esteja sendo executado para funcionar.
 
@@ -105,7 +105,7 @@ $ npm run dev
 
 Este projeto está sobe a licença [MIT](https://opensource.org/licenses/MIT) 
 
-Feito com ❤️  por Bruna Lima 
+Feito com ❤️  por Bruna Lima <br />
 ✉️  [Entre em contato!](https://www.linkedin.com/in/brunarafaela/)
 
 ---
