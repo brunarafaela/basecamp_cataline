@@ -96,6 +96,9 @@ $ npm run dev
  <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQFNJtR2Rcy-qw/profile-displayphoto-shrink_800_800/0/1606371051231?e=1625097600&v=beta&t=DNeY9XirRbG_uZYSkaao1orMXOhVl_KZzMd02kvTVx4" width="100px;" alt="Euzinha"/>
  <br />
  <sub><b>Bruna Lima</b></sub></a>
+ <a href="https://www.linkedin.com/in/brunarafaela/">Linkedin</a>
+ <a href="https://www.instagram.com/bruna.dev/">Instagram</a>
+ <a href="https://twitter.com/batbrn">Twitter</a>
  <br />
 
 ---
@@ -104,6 +107,7 @@ $ npm run dev
 
 Este projeto está sobe a licença [MIT](https://opensource.org/licenses/MIT) 
 
-Feito com ❤️ por Bruna Lima ✉️ [Entre em contato!](https://www.linkedin.com/in/brunarafaela/)
+Feito com ❤️  por Bruna Lima 
+✉️  [Entre em contato!](https://www.linkedin.com/in/brunarafaela/)
 
 ---
