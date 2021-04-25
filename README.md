@@ -11,7 +11,6 @@
 
 Basecamp é a modalidade free do bootcamp da Cataline, plataforma de ensino com foco no desenvolvimento web, cujo conteúdo é focado na linguagem JavaScript, utilizando os frameworks VueJS e NodeJS para o front e back-end. Neste curso, foi desenvolvida uma aplicação simples TODO list, com as funções de criar, exibir e deletar tasks, utilizando JSON Server e introdução ao Vue.
 
-```
 
 ---
 
