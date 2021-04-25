@@ -95,8 +95,8 @@ $ npm run dev
 <a href="https://www.linkedin.com/in/brunarafaela/">
  <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQFNJtR2Rcy-qw/profile-displayphoto-shrink_800_800/0/1606371051231?e=1625097600&v=beta&t=DNeY9XirRbG_uZYSkaao1orMXOhVl_KZzMd02kvTVx4" width="100px;" alt="Euzinha"/>
  <br />
- <sub><b>Bruna Lima</b></sub></a><br />
- <a href="https://www.linkedin.com/in/brunarafaela/">Linkedin</a> - <a href="https://www.instagram.com/bruna.dev/">Instagram</a> - <a href="https://twitter.com/batbrn">Twitter</a>
+<b>Bruna Lima</b></a><br />
+ <sub> <a href="https://www.linkedin.com/in/brunarafaela/">Linkedin</a> - <a href="https://www.instagram.com/bruna.dev/">Instagram</a> - <a href="https://twitter.com/batbrn">Twitter</a></sub>
  <br />
 
 ---
