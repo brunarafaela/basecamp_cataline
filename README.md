@@ -1,5 +1,5 @@
 <h1>
-     📚 <a href="https://www.cataline.io/basecamp" alt="Basecamp Cataline.io">Basecamp Cataline.io</a>
+     📚 <a href="https://basecamp.cataline.io/" alt="Basecamp Cataline.io">Basecamp Cataline.io</a>
 </h1>
 
 <h3 align="center">
